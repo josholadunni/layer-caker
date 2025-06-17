@@ -1,6 +1,6 @@
 import { Author } from "@/components/Author";
 import { Categories } from "@/components/Categories";
-import { components } from "@/sanity/PortableTextComponents";
+import { components } from "../sanity/PortableTextComponents";
 import { PortableText } from "next-sanity";
 import { POST_QUERYResult } from "@/sanity/types";
 import { PublishedAt } from "@/components/PublishedAt";
