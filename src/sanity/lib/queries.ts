@@ -19,6 +19,10 @@ export const POSTS_QUERY =
   author->{
     name,
     image
+  },
+  relatedPosts[]{
+    _key, //required for drag and drop
+    ...@->{_id, title, slug} // get fields from the referenced post
   }
 }`);
 
