@@ -20,10 +20,6 @@ export const POSTS_QUERY =
     name,
     image
   },
-  relatedPosts[]{
-    _key, //required for drag and drop
-    ...@->{_id, title, slug} // get fields from the referenced post
-  }
 }`);
 
 export const POSTS_SLUGS_QUERY =
@@ -49,5 +45,9 @@ export const POST_QUERY =
   author->{
     name,
     image
+  },
+    relatedPosts[]{
+    _key, //required for drag and drop
+    ...@->{_id, title, slug} // get fields from the referenced post
   }
 }`);

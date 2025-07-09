@@ -8,6 +8,11 @@ export const postType = defineType({
   icon: DocumentTextIcon,
   fields: [
     defineField({
+      name: "relatedPosts",
+      type: "array",
+      of: [{ type: "reference", to: { type: "post" } }],
+    }),
+    defineField({
       name: "title",
       type: "string",
     }),
